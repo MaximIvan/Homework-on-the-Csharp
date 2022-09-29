@@ -5,7 +5,7 @@
 // 9012 -> 12
 
 int N = new Random().Next(1, 100000);
-N = 9012;
+
 Console.Write($"{N} -> ");
 int sum = 0;
 int ost = 0;
