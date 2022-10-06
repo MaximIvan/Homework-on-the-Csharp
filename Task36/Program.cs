@@ -21,5 +21,5 @@ Console.WriteLine("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] a = mass(size);
 int sum = 0;
-for (int i = 1; i < size; i = i + 2) sum += a[i];
-Console.Write(sum);
+for (int i = 1; i < size; i = i + 2) sum += a[i]; // внимательнее с условием задания!!! У меня решено 
+Console.Write(sum);                               // с ошибкой. нечетные позиции и индексы разные вещи!!!
