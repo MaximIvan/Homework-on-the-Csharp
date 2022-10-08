@@ -16,9 +16,9 @@ int[] mass (int x)
     return a;
 }
 
-Console.WriteLine("Введите размер массива: ");
-int size = Convert.ToInt32(Console.ReadLine());
-int[] a = mass(size);
+Console.WriteLine("Введите размер массива: "); // допущена ошибка! Внимательней с условием!!!
+int size = Convert.ToInt32(Console.ReadLine()); // в условии сказано вещественные числа, т.е.
+int[] a = mass(size);                           // решать надо было через double.
 int max = a[0];
 int min = a[0];
 int res = 0;
