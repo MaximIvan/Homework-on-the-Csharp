@@ -56,6 +56,6 @@ for (int j = 0; j < Massive.GetLength(1); j++)
     }
     double avg = 0;
     avg = Math.Round(sum / Massive.GetLength(0), 1);
-    Console.Write($"{avg}; ");
+    Console.Write("{0, 4}", $"{avg}; ");
 }
 
