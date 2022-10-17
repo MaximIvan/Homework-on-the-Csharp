@@ -9,12 +9,19 @@ int x = Convert.ToInt32(Console.ReadLine());
 Console.Write($"N = {x} -> ");
 Numbers(x);
 
-
 int Numbers(int Num)
 {
     if (Num == 0) return Num;
     Console.Write($"{Num}, ");
-    return Num - Numbers(Num - 1);   
+    return Numbers(Num - 1);   
 }
 
-
+// Способ решения через void:
+// void NumberCounter (int number)
+// {
+//     if (number < 0) Console.Write($"{number} не нат.число");
+//     if (number == 0) return; - хоть и void, но return нужен!!!!
+//     Console.Write(number);
+//     NumberCounter(number - 1);
+// }
+// NumberCounter(x);
